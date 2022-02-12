@@ -5,11 +5,11 @@ body {
 h1,
 h2,
 h3 {
-	font-family: "Lobster", cursive;
+	font-family:'Khand', sans-serif;
 }
 
 h2 {
-	color: #505052;
+	color: #ffffff;
 }
 
 header h2 {
@@ -17,15 +17,24 @@ header h2 {
 }
 
 .site-footer {
-	background-image: linear-gradient(#cec8ff, white);
 	padding: 20px 0;
 }
 
 .jumbotron {
-	padding: 30px;
-	background-image: linear-gradient(to right, #000000, #2a2a2b, #3f3e3f);
-	color: white;
+    padding: 30px;
+    background-image: url("../img/navigation_stars.jpeg");
+    background-size: cover;
+    color: white;
 	margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .jumbotron {
+        padding: 30px;
+        background-image: linear-gradient(to right, #000000, #0a0a0a, #111111);
+        color: white;
+        margin: 0;
+    }
 }
 
 .row-content {
@@ -35,7 +44,7 @@ header h2 {
 }
 
 .navbar {
-	background-color: burlywood;
+	background-color: rgb(0, 0, 0);
 }
 
 .tab-content {
@@ -57,4 +66,133 @@ header h2 {
 	right: 0;
 	bottom: 0;
 	z-index: 100;
+}
+.carousel-inner img {
+	max-height: 400px;
+	min-height: 400px;
+	min-width: auto;
+}
+body {
+    background-color: rgb(22, 22, 22);
+}
+.fa {
+    color: white !important;
+}
+#logo {
+    height: 100px;
+    width: auto;
+}
+label {
+    color: white;
+}
+body {
+    background-image: 
+        url("https://static-mh.content.disney.io/starwars/assets/background/bg_starsL-fd4661a3ccea.jpg"),
+        url("https://static-mh.content.disney.io/starwars/assets/background/bg_starsR-655c85e404d4.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    background-size: 25%;
+    background-attachment: fixed;
+}
+@media screen and (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+}
+
+@font-face {
+    font-family: star;
+    src: url("../fonts/Aurebesh\ Condensed\ Bold\ Italic.otf");
+}
+
+.pM {
+    font-family: star;
+}
+
+p {
+    color: white;
+}
+
+/* Menu CSS */
+
+h3 {
+  display:inline-block;
+  color: white;
+  font-size:32px;
+  line-height:36px;
+  position:relative;
+  margin-top:28px;
+  margin-bottom:15px;
+}
+h3:before{
+  left:-40px;
+  height:0;
+  height:1px;
+}
+h3:before, h3:after {
+  content:"";
+  position:absolute;
+  bottom:18px;
+  height:1px;
+  width:40px;
+  margin:0 -15px;
+  background-color:#ffffff;
+}
+h3:after{
+  right:-40px;
+}
+h5 {
+  font-size:16px;
+  line-height:22px;
+  margin:0 0 15px;
+  font-weight:400;
+}
+.item {
+  position:relative;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+.item h4, .item p {
+  display:block;
+  clear:both;
+  color:#ffffff;
+}
+.item p {
+  clear:both;
+  color:#ffffff;
+  margin-left:5px;
+}
+.item span:first-of-type {
+  background-image:linear-gradient(to right,rgba(255, 255, 255, 0.5) 33%,rgba(255, 255, 255, 0) 0%);
+  background-position:bottom;
+  background-size:3px 1px;
+  background-repeat:repeat-x;
+  height:1px;
+  width:100%;
+  position:absolute;
+  top:22px;
+}
+/* Dots in IE */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+  .dots {
+    background:transparent url('/img/dot.gif') repeat-x bottom left;
+  }
+}
+.item span:nth-of-type(2n) {
+  position:absolute;
+  font-size:22px;
+  font-weight:400;
+  right:0;
+  padding-left:8px;
+  color: white;
+  z-index:0;
+}
+.item h4 {
+  display:inline-block;
+  padding-right:8px;
+  font-size:1.25rem;
+  max-width:80%;
+  text-transform:capitalize;
+  margin-bottom:4px;
+  position:relative;
 }

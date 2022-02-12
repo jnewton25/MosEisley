@@ -33,7 +33,11 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-4 col-sm-3 col-md-2 align-self-center">
-						<p>Hello World</p>
+						<img
+							id="logo"
+							src="img/pngwing.com.png"
+							class="img-fluid"
+						/>
 					</div>
 				</div>
 			</div>
@@ -41,165 +45,180 @@
 
 		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
 			<div class="container">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#myNavbar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div
 					class="collapse navbar-collapse justify-content-center"
 					id="myNavbar"
 				>
-					<ul class="navbar-nav navbar-center">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html"
-								><i class="fa fa-home fa-lg"></i> Home</a
-							>
+					<ul class="navbar-nav navbar-center mr-5">
+						<li class="nav-item mx-4">
+							<a class="nav-link" href="index.html"> Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="menu.html"
-								><i class="fa fa-info fa-lg"></i> Menu</a
-							>
+						<li class="nav-item mx-4">
+							<a class="nav-link" href="menu.html"> Menu</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="gallery.html"
-								><i class="fa fa-list fa-lg"></i> Gallery</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="location.html"
-								><i class="fa fa-list fa-lg"></i> Location</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#"
-								><i class="fa fa-address-card fa-lg"></i>
-								Contact</a
-							>
+						<li class="nav-item active mx-4">
+							<a class="nav-link" href="#"> Contact<span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<div class="container">
-			<div class="row row-content">
-				<div class="col-12">
-					<h2>Contact Us</h2>
-					<hr />
-				</div>
-				<div class="col-md-10">
-					<form>
-						<div class="form-group row">
-							<label
-								for="firstName"
-								class="col-md-2 col-form-label"
-								>Name *</label
-							>
-							<div class="col-md-5 col-6">
-								<input
-									type="text"
-									class="form-control"
-									id="firstName"
-									name="firstName"
-									placeholder="First Name"
-								/>
-							</div>
-							<div class="col-md-5 col-6">
-								<input
-									type="text"
-									class="form-control"
-									id="lastName"
-									name="lastName"
-									placeholder="Last Name"
-								/>
-							</div>
-						</div>
-						<div class="form-group row">
-							<label
-								for="areaCode"
-								class="col-md-2 col-form-label"
-								>Phone Number *</label
-							>
-							<div class="col-md-10">
-								<input
-									type="tel"
-									class="form-control"
-									name="telNum"
-									placeholder="(___) ___-____"
-								/>
-							</div>
-						</div>
-						<div class="form-group row">
-							<label for="email" class="col-md-2 col-form-label"
-								>Email *</label
-							>
-							<div class="col-md-10">
-								<input
-									type="email"
-									class="form-control"
-									id="email"
-									name="email"
-									placeholder="Email"
-								/>
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col offset-md-2">
-								Contact preference? *
-								<div class="form-check form-check-inline">
+		<div class="container" id="bg">
+			<div class="container">
+				<div class="row row-content">
+					<div class="col-12">
+						<h2>Contact Us</h2>
+						<hr />
+					</div>
+					<div class="col-md-10">
+						<form>
+							<div class="form-group row">
+								<label
+									for="firstName"
+									class="col-md-2 col-form-label"
+									>Name *</label
+								>
+								<div class="col-md-5 col-6">
 									<input
-										type="radio"
-										class="form-check-input"
-										id="contactYes"
-										name="contactRadios"
-										value="yes"
+										type="text"
+										class="form-control"
+										id="firstName"
+										name="firstName"
+										placeholder="First Name"
 									/>
-									<label
-										for="contactYes"
-										class="form-check-label"
-										>Phone</label
-									>
 								</div>
-								<div class="form-check form-check-inline">
+								<div class="col-md-5 col-6">
 									<input
-										type="radio"
-										class="form-check-input"
-										id="contactNo"
-										name="contactRadios"
-										value="no"
+										type="text"
+										class="form-control"
+										id="lastName"
+										name="lastName"
+										placeholder="Last Name"
 									/>
-									<label
-										for="contactNo"
-										class="form-check-label"
-										>Email</label
-									>
 								</div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<label
-								for="feedback"
-								class="col-md-2 col-form-label"
-								>Message *</label
-							>
-							<div class="col-md-10">
-								<textarea
-									class="form-control"
-									id="feedback"
-									name="feedback"
-									rows="8"
-								></textarea>
+							<div class="form-group row">
+								<label
+									for="areaCode"
+									class="col-md-2 col-form-label"
+									>Phone Number *</label
+								>
+								<div class="col-md-10">
+									<input
+										type="tel"
+										class="form-control"
+										name="telNum"
+										placeholder="(___) ___-____"
+									/>
+								</div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<div class="offset-md-2 col-md-10">
-								<button type="submit" class="btn btn-primary">
-									Submit
-								</button>
+							<div class="form-group row">
+								<label
+									for="email"
+									class="col-md-2 col-form-label"
+									>Email *</label
+								>
+								<div class="col-md-10">
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										name="email"
+										placeholder="Email"
+									/>
+								</div>
 							</div>
-						</div>
-					</form>
+							<div class="form-group row">
+								<div class="col offset-md-2" style="color: white;">
+									Contact preference? * 
+									<div class="form-check form-check-inline">
+										<input
+											type="radio"
+											class="form-check-input"
+											id="contactYes"
+											name="contactRadios"
+											value="yes"
+										/>
+										<label
+											for="contactYes"
+											class="form-check-label"
+											>Phone</label
+										>
+									</div>
+									<div class="form-check form-check-inline">
+										<input
+											type="radio"
+											class="form-check-input"
+											id="contactNo"
+											name="contactRadios"
+											value="no"
+										/>
+										<label
+											for="contactNo"
+											class="form-check-label"
+											>Email</label
+										>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label
+									for="feedback"
+									class="col-md-2 col-form-label"
+									>Message *</label
+								>
+								<div class="col-md-10">
+									<textarea
+										class="form-control"
+										id="feedback"
+										name="feedback"
+										rows="8"
+									></textarea>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="offset-md-2 col-md-10">
+									<button type="submit" class="btn btn-dark">
+										Submit
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<footer></footer>
+			<footer class="site-footer my-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-6 col-sm-5 text-center">
+							<a
+								class="btn btn-social-icon"
+								href="http://instagram.com/"
+								><i
+									class="fa fa-instagram"
+									aria-hidden="true"
+								></i
+							></a>
+							<a
+								class="btn btn-social-icon"
+								href="http://facebook.com/"
+								><i class="fa fa-facebook"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
 		<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
