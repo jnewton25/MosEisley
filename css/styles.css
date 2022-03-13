@@ -26,6 +26,7 @@ header h2 {
     background-size: cover;
     color: white;
 	margin: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,8 +80,8 @@ body {
     color: white !important;
 }
 #logo {
-    height: 100px;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 label {
     color: white;
