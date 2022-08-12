@@ -1,9 +1,12 @@
 {
+	"homepage": "https://jnewton25.github.io/MosEisley",
 	"name": "moseisley",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.html",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run lite",
 		"lite": "lite-server"
@@ -12,6 +15,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"font-awesome": "^4.7.0",
+		"gh-pages": "^4.0.0",
 		"lite-server": "^2.6.1"
 	},
 	"dependencies": {
