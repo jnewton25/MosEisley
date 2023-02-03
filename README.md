@@ -13,4 +13,4 @@ Restaurant website themed with the Mos Eisley Cantina from Star Wars.
 
 ## Preview
 
-![moseisley-preview](https://user-images.githubusercontent.com/28316960/216686556-cfb09212-d614-45c9-8c57-fef9286bda60.png")
+![moseisley-preview](https://user-images.githubusercontent.com/28316960/216686914-e805c1f1-7e41-49bf-a5aa-1ab670b599cb.png)
